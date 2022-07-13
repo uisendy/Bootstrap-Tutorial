@@ -1,0 +1,26 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+#section-bg{
+    background-image: url(image/Header-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+
+.section-hero {
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* .section-hero h1{
+    font-weight: 700;
+} */
+
+.section-hero p{
+    font-weight: 400;
+}
+
+.description-msg{
+    width: 63%;
+}
