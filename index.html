@@ -52,8 +52,8 @@
         </div>
       </div>
     </header>
-
-    <section
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+      <section
       id="section-bg"
       class="container-fluid d-flex flex-column justify-content-center"
     >
@@ -91,7 +91,7 @@
       </div>
     </section>
     <section
-      class="work-section container-fluid d-flex flex-column align-items-around"
+       id="work-section" class="work-section container-fluid d-flex flex-column align-items-around"
     >
       <div
         class="container row d-flex align-items-center p-3 my-5 bg-light mx-auto"
@@ -195,10 +195,51 @@
         </div>
       </div>
     </section>
-    <section class="contact-section container-fluid bg-primary">
-      <div class="contact-bg text-light">
-        <h2 class="text-center pt-5">Contact Me</h2>
-        <p class="contact-desc text-center">
+    <section
+    id="about-section"
+    class="container-fluid d-flex flex-column justify-content-center"
+  >
+    <!-- <img class="img-fluid" src="image/Header-bg.svg" alt=""> -->
+    <div class="section-hero">
+      <h1 class="fw-bold">
+        About <br> Myself
+      </h1>
+
+      <p class="description-msg">
+        I’m a software developer! I can help you build a product , feature or
+        website Look through some of my work and experience! If you like what
+        you see and have a project you need coded, don’t hestiate to contact
+        me.
+      </p>
+      <h3 class="text-primary h4">LET’S CONNECT</h3>
+      <ul class="list-unstyle list-inline d-flex">
+        <li class="list-inline-item p-1">
+          <a href="#"><img src="image/twitter.svg" alt="Twiiter" /></a>
+        </li>
+        <li class="list-inline-item p-1">
+          <a href="#"><img src="image/Linkedin-icon.svg" alt="LinkedIn" /></a>
+        </li>
+        <li class="list-inline-item p-1">
+          <a href="#"><img src="image/medium.svg" alt="Medium" /></a>
+        </li>
+        <li class="list-inline-item p-1">
+          <a href="#"><img src="image/github.svg" alt="Github" /></a>
+        </li>
+        <li class="list-inline-item p-1">
+          <a href="#"><img src="image/angellist.svg" alt="Angellist" /></a>
+        </li>
+      </ul>
+      <button type="button"
+              class="btn btn-outline-primary mt-4 py-2 px-3">
+              Get My Resume
+            </button>
+    </div>
+  </section>
+
+    <section  id="contact-section" class="contact-section container-fluid bg-primary">
+      <div class="contact-bg container-fluid d-flex flex-column justify-content-center text-light">
+        <h2 class="text-center pt-5 h2 mb-3">Contact Me</h2>
+        <p class="contact-desc text-center mb-3">
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
           with it
@@ -237,69 +278,22 @@
               required
               id="message"
               name="message"
+              height="140px"
               placeholder="Write your Message Here"
               maxlength="300"
             ></textarea>
           </div>
-          <button type="submit" class="btn btn-danger mt-4 py-2 px-3">
-            Submit
-          </button>
 
-          <button type="button" class="btn btn-outline-primary mt-4 py-2 px-3">
-            Submit
-          </button>
+          <div class="btns">
+            <button type="submit" class="btn btn-light mt-4 py-2 px-3">
+              Submit
+            </button>
+          </div>
+          
         </form>
       </div>
     </section>
-
-    <!-- <div class="contact-form">
-          <h2 class="contact-header">Contact Me</h2>
-          <p class="contact-desp">
-            If you have an application you are interested in developing, a
-            feature that you need built or a project that needs coding. I’d love
-            to help with it
-          </p>
-          <form
-            class="form-container"
-            action="https://formspree.io/f/xknylovq"
-            method="POST"
-          >
-            <ul class="form-list">
-              <li class="form-input">
-                <label for="name" class="hidden">Name</label>
-                <input
-                  required
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Contact Name"
-                  maxlength="30"
-                />
-              </li>
-              <li class="form-input">
-                <label for="email" class="hidden">Email</label>
-                <input
-                  required
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="contact@email.xyz"
-                />
-              </li>
-              <li class="textarea">
-                <label for="message" class="hidden">Name</label>
-                <textarea
-                  required
-                  id="message"
-                  name="message"
-                  placeholder="Write your Message Here"
-                  maxlength="300"
-                ></textarea>
-              </li>
-            </ul>
-            <button class="project-btn" type="submit">Get in Touch</button>
-          </form>
-        </div>
-      </div> -->
+    </main>
+  
   </body>
 </html>

@@ -31,6 +31,10 @@ form{
     width: 63%;
 }
 
+#about-section{
+    height: 100vh;
+}
+
 .work-section{
     background-color: #E5E5E5;
 }
@@ -49,8 +53,11 @@ form{
     height: 90vh;
 }
 
-
-
 .hidden{
     display: none;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
 }
