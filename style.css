@@ -1,11 +1,17 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+
+form{
+    width: 40%;
+    margin: 0 auto;
+    
+}
 #section-bg{
     background-image: url(image/Header-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    height:100vh;
+    height:95vh;
 }
 
 .section-hero {
@@ -23,4 +29,28 @@
 
 .description-msg{
     width: 63%;
+}
+
+.work-section{
+    background-color: #E5E5E5;
+}
+.contact-section{
+    background-color: #6070FF;
+    border-radius:8rem 0 0 0;
+}
+
+.contact-desc{
+    width: 38%;
+    margin: 0 auto;
+}
+.contact-bg{
+    background-image: url(image/contact-form-background.svg);
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+
+
+.hidden{
+    display: none;
 }
